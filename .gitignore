@@ -1,0 +1,19 @@
+# Python cache files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environment
+venv/
+env/
+
+# Model artifacts
+*.pkl
+
+# Dataset files (optional)
+*.csv
+
+# IDE/Editor files
+.vscode/
+.idea/
