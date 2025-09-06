@@ -40,7 +40,7 @@ pip install -r requirements.txt
 ```
 4. Train the model (if not already trained):
 ```
-python src/train_model.py
+python src/train_model.py --data data/combined.csv --out models/artifacts.pkl
 ```
 5. Run the GUI app:
 ```
