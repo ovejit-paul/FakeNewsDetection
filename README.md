@@ -7,6 +7,7 @@
 ---
 
 📂 Project Structure
+```
 FakeNewsDetection/
 │
 ├── data/ # Training dataset (CSV files)
@@ -16,7 +17,7 @@ FakeNewsDetection/
 │ └── app.py # GUI application
 ├── requirements.txt # Python dependencies
 └── README.md # Project documentation
-
+```
 
 
 ---
