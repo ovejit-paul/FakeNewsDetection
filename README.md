@@ -1,23 +1,51 @@
-# Fake News Detection Project (SDP-2)
+🚀 Features
+- Preprocessing of text data (tokenization, stopwords removal, TF-IDF).
+- Machine Learning model training and evaluation.
+- GUI (Tkinter) for easy user interaction.
+- Organized project structure with `src/`, `data/`, and `models/`.
 
-## Files
-- `train_model.py` : Train the ML model on your dataset (CSV with `text` and `label`).
-- `app.py` : Desktop Tkinter application to load trained model and predict Fake/Real news with explanations.
-- `requirements.txt` : Python dependencies.
-- `demo_news.csv` : Small sample dataset for quick testing.
+---
 
-## Setup
-```bash
+📂 Project Structure
+FakeNewsDetection/
+│
+├── data/ # Training dataset (CSV files)
+├── models/ # Saved ML models (artifacts.pkl)
+├── src/ # Source code
+│ ├── train_model.py # Model training script
+│ └── app.py # GUI application
+├── requirements.txt # Python dependencies
+└── README.md # Project documentation
+
+
+
+---
+
+🛠️ Installation & Setup
+1. Clone the repository:
+```
+git clone https://github.com/ovejit-paul/FakeNewsDetection.git
+cd FakeNewsDetection
+```
+2. Create a virtual environment (optional but recommended):
+```
+python -m venv venv
+source venv/bin/activate  # For Linux/Mac
+venv\Scripts\activate     # For Windows
+```
+3. Install dependencies:
+```
 pip install -r requirements.txt
 ```
-
-## Train Model
-```bash
-python train_model.py --data demo_news.csv --out model_artifacts.pkl
+4. Train the model (if not already trained):
 ```
-
-## Run App
-```bash
-python app.py
+python src/train_model.py
 ```
-Then load `model_artifacts.pkl` in the app, paste text, and click Predict.
+5. Run the GUI app:
+```
+python src/app.py
+```
+📸 Demo Screenshot
+Here’s how the Fake News Detection GUI looks:
+
+![Demo Screenshot](screenshot.png)
